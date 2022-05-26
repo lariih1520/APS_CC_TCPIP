@@ -1,0 +1,9 @@
+create database chat;
+use chat;
+
+create table usuario(
+	id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(30) not null,
+	username VARCHAR(20) not null unique,
+	senha VARCHAR(12) not null
+);
